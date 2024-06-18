@@ -1,11 +1,5 @@
 /**
-* Template Name: Bethany
-* Template URL: https://bootstrapmade.com/bethany-free-onepage-bootstrap-theme/
-* Updated: Mar 17 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
+BALLROOM CLUB
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -83,22 +77,25 @@ h6 {
   z-index: 997;
   transition: all 0.5s;
   top: 20px;
+  background: #275D38;
 }
 
 #header .header-container {
-  background: #fff;
+  background: transparent;
 }
 
 #header.header-scrolled {
-  background: #fff;
+  background:#275D38;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   top: 0;
 }
 
-#header .logo {
-  overflow: hidden;
-  padding: 16px 30px 12px 30px;
-  background: #275D38;
+#header .logo img {
+  display: block; /* Ensures the image is displayed as a block element */
+  max-width: 100%; /* Ensures the image does not exceed its container's width */
+  height: auto; /* Maintains the image's aspect ratio */
+  padding: 10px; /* Adjust padding as needed */
+  background-color: #275D38; /* Background color behind the image */
 }
 
 #header .logo h1 {
@@ -512,12 +509,29 @@ section {
   padding: 5px 0;
 }
 
+.clients .row {
+  display: flex;
+  justify-content: center; /* Align items in the center horizontally */
+  align-items: center; /* Align items in the center vertically */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  height: 100%; /* Ensure it takes the full height */
+}
+
+.clients .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Spacing around logos */
+}
+
 .clients img {
-  width: 40%;
-  filter: grayscale(100);
+  width: auto; /* Maintain original aspect ratio */
+  max-width: 200px; /* Set a max width for consistency */
+  height: auto; /* Maintain aspect ratio */
+  filter: none; /* Ensure images are in full color */
   transition: all 0.4s ease-in-out;
-  display: inline-block;
-  padding: 15px 0;
+  display: block; /* Ensure proper alignment */
+  padding: 10px; /* Add some spacing around the logos */
 }
 
 .clients img:hover {
