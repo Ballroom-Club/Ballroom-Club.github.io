@@ -28,6 +28,26 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Google Calander API?-->
+   <!--loading api library-->
+  <script async defer src="https://apis.google.com/js/api.js" onload="loadGoogleClient()"></script>
+  <!--script to initalize-->
+  <script>
+    function loadGoogleClient() {
+      gapi.load('client', initClient);
+    }
+  
+    function initClient() {
+      gapi.client.init({
+        apiKey: '', // E-API
+        discoveryDocs: ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"],
+      }).then(function () {
+        fetchCalendarEvents();
+      });
+    }
+  </script>
+  
+
   <!-- =======================================================
   THE BALLROOM CLUB
   ======================================================== -->
@@ -218,15 +238,26 @@
       </div>
     </section><!-- End Why Us Section -->
 
-    <!-- ======= Cta Section ======= -->
+    <!-- ======= Cta Section (calendar) ======= -->
     <section id="cta" class="cta">
       <div class="container">
 
         <div class="text-center" data-aos="zoom-in">
-          <h3>Call To Action</h3>
-          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h3>Ballroom Club Calendar</h3>
+          <p>Stay up to date with all of our events!</p>
+
+          <!-- google calander iframe -->
+          <iframe src="https://calendar.google.com/calendar/embed?src=ballroomclubuvu%40gmail.com&ctz=America%2FDenver" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+          <!--button-->
           <a class="cta-btn" href="#">Call To Action</a>
+          <div id="calendar-events"></div>
         </div>
+
+
+        </script>
+        <script async defer src="https://apis.google.com/js/api.js" onload="loadGoogleClient()"></script>
+        
 
       </div>
     </section><!-- End Cta Section -->
