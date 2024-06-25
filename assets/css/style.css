@@ -719,7 +719,8 @@ section {
   text-align: center;
   padding: 40px 20px;
   transition: all ease-in-out 0.3s;
-  background: transparent; /* Set background to transparent */
+  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url("../img/group_hero.jpg") fixed center center;
+  background-size: cover;
 }
 
 .services .icon-box .icon {
@@ -744,6 +745,7 @@ section {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
+  color: #fff; /* Set subtitle text color to white */
 }
 
 .services .icon-box h4 a {
