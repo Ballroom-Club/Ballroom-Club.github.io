@@ -1045,8 +1045,8 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team {
-  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url("../img/group_hero.jpg") fixed center center;
-}
+  background: inherit; 
+} 
 
 .team .member {
   position: relative;
