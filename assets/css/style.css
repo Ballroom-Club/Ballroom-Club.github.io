@@ -671,7 +671,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Cta
+# Cta or calendar
 --------------------------------------------------------------*/
 .cta {
   background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url("../img/group_hero.jpg") fixed center center;
@@ -713,13 +713,13 @@ section {
 
 
 /*--------------------------------------------------------------
-# Services
+# Services or remind 
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
   padding: 40px 20px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
+  background: transparent; /* Set background to transparent */
 }
 
 .services .icon-box .icon {
