@@ -1045,7 +1045,7 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team {
-  background: inherit; 
+  background: #fff; 
 } 
 
 .team .member {
